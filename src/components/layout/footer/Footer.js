@@ -193,12 +193,12 @@ const Footer = ({ footerType }) => {
 
                 <div className="copyright-menu">
                   <ul>
-                    <li>
+                    {/* <li>
                       <Link href="/privacy-policy">Policy & privacy</Link>
                     </li>
                     <li>
                       <Link href="/terms">Terms & conditions</Link>
-                    </li>
+                    </li> */}
 
                     {/* previously pointed to /contact; kept as comment */}
                     {/*
