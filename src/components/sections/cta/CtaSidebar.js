@@ -4,9 +4,9 @@ const CtaSidebar = () => {
 	return (
 		<div
 			className="tj-sidebar-cta"
-			style={{
-				backgroundImage: "url('/images/blog/widget-cta.webp')",
-			}}
+			// style={{
+			// 	backgroundImage: "url('/images/blog/widget-cta.webp')",
+			// }}
 		>
 			<div className="content">
 				<div className="icon">

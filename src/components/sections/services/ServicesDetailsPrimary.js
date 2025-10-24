@@ -11,6 +11,7 @@ const ServicesDetailsPrimary = ({ option }) => {
 	const heading = titleLarge || title || "Service details";
 
 	return (
+		
 		<section className="tj-service-area section-space">
 			<div className="container">
 				<div className="row rg-50">
@@ -21,7 +22,7 @@ const ServicesDetailsPrimary = ({ option }) => {
 									<h3 className="tj-post-title text-anim">{heading}</h3>
 
 									<Image
-										src="/images/service/tj-service-1.webp"
+										src="/images/service/primary.png"
 										alt="post-image"
 										width={870}
 										height={498}
@@ -60,7 +61,7 @@ const ServicesDetailsPrimary = ({ option }) => {
 										</ul>
 									</div>
 
-									<div className="service-images-wrap">
+									{/* <div className="service-images-wrap">
 										<div className="row">
 											<div className="col-sm-6">
 												<div className="image-wrap hover:shine wow fadeInUp" data-wow-delay="0.5s">
@@ -85,7 +86,7 @@ const ServicesDetailsPrimary = ({ option }) => {
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> */}
 
 									<div className="check-list mb-40">
 										<h4 className="text-anim">How it works</h4>

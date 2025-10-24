@@ -12,7 +12,7 @@ import Testimonials2 from "@/components/sections/testimonials/Testimonials2";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import Services3 from "@/components/sections/services/Services3" 
-
+import OurVision from "@/components/sections/services/OurVision"
 export default function About() {
 	return (
 		<div>
@@ -23,7 +23,8 @@ export default function About() {
 				<About11 />
 				{/* <Features type={2} /> */}
 				<Funfact3 />
-				<Services3/>
+				{/* <Services3/> */}
+				<OurVision/>
 				
 				{/* <Team8 /> */}
 				{/* <Skills1 /> */}

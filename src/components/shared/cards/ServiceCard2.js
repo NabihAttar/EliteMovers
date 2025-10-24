@@ -1,16 +1,22 @@
+import { useState } from 'react';
 import modifyNumber from "@/libs/modifyNumber";
 import Image from "next/image";
 import Link from "next/link";
 
 const ServiceCard2 = ({ service, idx, lastItem }) => {
+  const [isHovered, setIsHovered] = useState(false);
   const { title, desc, id, iconName, bgImg } = service || {};
 
-  // Show button only for the first two cards
   const showBtn =
     typeof idx === "number" ? idx < 1 : [1].includes(Number(id));
 
   return (
-    <div className="service-style-2">
+    
+    <div 
+      className="service-style-2"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <div className="service-icon">
         <i className={iconName ? iconName : "tji-optimization"}></i>
       </div>
@@ -18,15 +24,15 @@ const ServiceCard2 = ({ service, idx, lastItem }) => {
       <div className="service-content">
         <span className="number">{modifyNumber(id)}</span>
 
-        <h4 className="title">
-          <Link href={`/services/${id}`}>{title}</Link>
+        <h4 
+          className="title" 
+          style={{ color: isHovered ? 'white' : '' }}
+        >
+          {title}
         </h4>
 
         <div className="desc">
-          <p>
-            In today's dynamic business environment, the key to success lies in
-            strategic planning and operational excellence.
-          </p>
+          <p>{desc}</p>
         </div>
 
         {showBtn && (
