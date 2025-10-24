@@ -63,7 +63,7 @@ const Hero = () => {
 							<div className="hero-images-box">
 								<div className="hero-images">
 									<Image
-										src="/images/hero/hero.png"
+										src="/images/hero/h1-hero-1.webp"
 										alt="Images"
 										height={610}
 										width={752}

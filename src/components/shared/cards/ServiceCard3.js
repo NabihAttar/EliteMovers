@@ -31,11 +31,11 @@ const ServiceCard3 = ({ service, idx, lastItem }) => {
 					</Link>
 				</div>
 			</div>
-			{/* <div className="service-button d-none d-lg-inline-block">
+			<div className="service-button d-none d-lg-inline-block">
 				<Link href={`/services/${id}`} className="text-btn">
 					Learn more <i className="tji-angle-right"></i>
 				</Link>
-			</div> */}
+			</div>
 		</div>
 	);
 };

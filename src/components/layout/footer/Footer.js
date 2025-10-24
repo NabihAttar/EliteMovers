@@ -25,7 +25,7 @@ const Footer = ({ footerType }) => {
         <div className="container">
           <div className="row rg-50 line">
             {/* Col 1: Offices (unchanged) */}
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div className="footer-widget footer1-col-1 footer-contact-infos">
                 <div className="footer-title">
                   <h4 className="title">Our offices</h4>
@@ -54,7 +54,7 @@ const Footer = ({ footerType }) => {
             </div>
 
             {/* Col 2: Quick Links to match navbar */}
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div className="col-xl-3 col-lg-2 col-md-6 col-sm-6">
               <div className="footer-widget footer1-col-2 widget_nav_menu">
                 <div className="footer-title">
                   <h4 className="title">Resources</h4>
@@ -94,7 +94,7 @@ const Footer = ({ footerType }) => {
             </div>
 
             {/* Col 3: Services — top-level only to match navbar; details kept commented */}
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div className="col-xl-2 col-lg-3 col-md-6 col-sm-6">
               <div className="footer-widget footer1-col-3 widget_nav_menu">
                 <div className="footer-title">
                   <h4 className="title">Services</h4>
@@ -102,25 +102,7 @@ const Footer = ({ footerType }) => {
                 <div className="widget-menu">
                   <ul>
                     <li>
-<h6 style={{color:"#a9b0b8"}}>Market research</h6>    
-                </li>
-                      <li>
-<h6 style={{color:"#a9b0b8"}}>Business process</h6>    
-                    </li>
-                      <li>
-<h6 style={{color:"#a9b0b8"}}>Financial management</h6>    
-                    </li>
-                      <li>
-<h6 style={{color:"#a9b0b8"}}>Change management</h6>    
-                    </li>
-                      <li>
-<h6 style={{color:"#a9b0b8"}}>IT consulting</h6>    
-                    </li>
-                      <li>
-<h6 style={{color:"#a9b0b8"}}>Strategic planning</h6>    
-                    </li>
-                      <li>
-<h6 style={{color:"#a9b0b8"}}>Leadership </h6>    
+                      <Link href="/services">All Services</Link>
                     </li>
 
                     {/* --- original detailed service links kept as comments --- */}
@@ -139,7 +121,7 @@ const Footer = ({ footerType }) => {
             </div>
 
             {/* Col 4: Newsletter (unchanged) */}
-            {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
               <div className="footer-widget footer1-col-4 footer-newsletter-form">
                 <div className="newsletter-title">
                   <h3 className="title">Subscribe to our newsletter</h3>
@@ -161,13 +143,13 @@ const Footer = ({ footerType }) => {
                   </form>
                 </div>
               </div>
-            </div> */}
+            </div>
 
           </div>
         </div>
       </div>
 
-      Bottom copyright & menus
+      {/* Bottom copyright & menus */}
       <div className="footer-copyright-area">
         <div className="container">
           <div className="row">
@@ -211,17 +193,18 @@ const Footer = ({ footerType }) => {
 
                 <div className="copyright-menu">
                   <ul>
-                    <li>
+                    {/* <li>
                       <Link href="/privacy-policy">Policy & privacy</Link>
                     </li>
                     <li>
                       <Link href="/terms">Terms & conditions</Link>
-                    </li>
+                    </li> */}
 
-                    
+                    {/* previously pointed to /contact; kept as comment */}
+                    {/*
                     <li><Link href="contact">Policy & privacy</Link></li>
                     <li><Link href="contact">Terms & conditions</Link></li>
-                   
+                    */}
                   </ul>
                 </div>
               </div>

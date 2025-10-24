@@ -2,7 +2,6 @@ import Link from "next/link";
 
 const ContactTop = () => {
 	return (
-		
 		<section className="tj-contact-area section-space">
 			<div className="container">
 				<div className="row">

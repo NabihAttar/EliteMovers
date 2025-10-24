@@ -82,9 +82,9 @@ const Navbar = ({ headerType, isStickyHeader }) => {
         </li>
 
         {/* ==== CONTACT ==== */}
-        <li className={aboutNav?.isActive ? "current-menu-ancestor" : ""}>
-          <Link href={aboutNav?.path ? aboutNav?.path : "/about"}>
-            {aboutNav?.name ? aboutNav?.name : "About Us"}
+        <li className={contactNav?.isActive ? "current-menu-ancestor" : ""}>
+          <Link href={contactNav?.path ? contactNav?.path : "#"}>
+            {contactNav?.name ? contactNav?.name : "Contact"}
           </Link>
         </li>
 
@@ -119,11 +119,9 @@ const Navbar = ({ headerType, isStickyHeader }) => {
         </li>
 
         {/* ==== ABOUT US ==== */}
-       
-
-           <li className={contactNav?.isActive ? "current-menu-ancestor" : ""}>
-          <Link href={contactNav?.path ? contactNav?.path : "#"}>
-            {contactNav?.name ? contactNav?.name : "Contact"}
+        <li className={aboutNav?.isActive ? "current-menu-ancestor" : ""}>
+          <Link href={aboutNav?.path ? aboutNav?.path : "/about"}>
+            {aboutNav?.name ? aboutNav?.name : "About Us"}
           </Link>
         </li>
 
