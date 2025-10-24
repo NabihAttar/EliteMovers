@@ -28,15 +28,16 @@ const ServicesPrimary = () => {
 				<div className="row rg-30">
 					{currentItems?.length
 						? currentItems?.map((item, idx) => (
-								<div
-									key={idx}
-									className="col-lg-4 col-md-6 wow fadeInUp"
-									data-wow-delay={makeWowDelay(idx, 0.1)}
-								>
-<div className="w-100 h-100">
-								<ServiceCard2 service={item} idx={idx} type={2} />
-							</div>								</div>
-						  ))
+							<div
+								key={idx}
+								className="col-lg-4 col-md-6 wow fadeInUp"
+								data-wow-delay={makeWowDelay(idx, 0.1)}
+							>
+								<div className="h-100 d-flex"> 
+									<ServiceCard2 service={item} idx={idx} type={2} />
+								</div>
+							</div>
+						))
 						: ""}
 				</div>
 				{/* <!-- post pagination --> */}

@@ -20,7 +20,7 @@ const Funfact1 = () => {
 						<div className="counter-wrapper">
 							<div className="counter-item">
 								<div className="bottom-line d-md-none"></div>
-								<FunfactSingle currentValue={1/3} symbol={""} />
+								<FunfactSingle currentValue={"1"} symbol={"/3"} />
 								<span className="sub-title">of the Fortune 500</span>
 							</div>
 							<div className="counter-item">

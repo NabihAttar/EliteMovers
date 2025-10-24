@@ -261,6 +261,10 @@
 	}
 }
 
+
+
+
+
 .service-style-2 {
 	border: 1px solid var(--tj-color-border-2);
 	padding: 40px 30px 45px;
@@ -402,7 +406,15 @@
 	}
 }
 
+
+.service-style-2:hover .title,
+.service-style-2:hover .title a {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
 .service-style-3 {
+	
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -560,3 +572,17 @@
 	}
 }
 /* !END: Service CSS */
+/* base color + transition */
+.service-style-2 .service-content .title {
+  color: var(--tj-color-heading-primary);
+  transition: color .25s ease;
+}
+
+/* on card hover, make title white (works with/without <a>) */
+.service-style-2:hover .service-content .title,
+.service-style-2:hover .service-content .title a {
+  color: var(--tj-color-common-white);
+}
+.service-style-2 .service-content .title:hover { 
+  color: var(--tj-color-common-white);
+}

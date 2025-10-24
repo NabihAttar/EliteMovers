@@ -5,7 +5,7 @@ const HeroInner = ({ title, text, breadcrums = [], noNeedTitleAnim }) => {
 	return (
 		<section
 			className="tj-page-header"
-			style={{ backgroundImage: `url('/images/bg/pheader-bg.webp')` }}
+			style={{ backgroundImage: `url('/images/bg/bgPict.png')` }}
 		>
 			<div className="container">
 				<div className="row">

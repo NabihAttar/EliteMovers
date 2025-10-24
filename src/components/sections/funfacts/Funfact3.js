@@ -40,7 +40,7 @@ const Funfact3 = () => {
 					<div className="col-lg-5">
 						<div className="tj-evolute-image hover:shine">
 							<Image
-								src="/images/about/evolute.webp"
+								src="/images/about/about.png"
 								alt="evolute"
 								width={715}
 								height={650}
@@ -96,7 +96,7 @@ const Funfact3 = () => {
 					</div>
 					<div className="col-xl-6 col-12">
 						<div className="tj-evolute-image">
-							<img src="/images/about/evolute.webp" alt="evolute" />
+							<img src="/images/about/about.png" alt="evolute" />
 							{/* <div className="about-video-box style-2">
 								<div className="video-box">
 									<PopupVideo>
